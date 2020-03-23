@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: sudo apt-get install xvfb
     - run: export DISPLAY=':99.0'
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
