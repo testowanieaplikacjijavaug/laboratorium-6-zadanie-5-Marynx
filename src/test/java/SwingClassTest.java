@@ -80,7 +80,7 @@ public class SwingClassTest {
         frameFixture.button(addOne).click();
         frameFixture.button(addTwo).click();
         Pause.pause();
-        frameFixture.textBox().requireText("3").background().requireEqualTo(Color.BLUE);
+        frameFixture.textBox().requireText("3").background().requireEqualTo(Color.YELLOW);
     }
     
     @Test
@@ -89,7 +89,7 @@ public class SwingClassTest {
         frameFixture.button(clear).click();
         frameFixture.button(addTwo).click();
         Pause.pause();
-        frameFixture.textBox().requireText("2").background().requireEqualTo(Color.BLUE);
+        frameFixture.textBox().requireText("2").background().requireEqualTo(Color.YELLOW);
     }
     
     @Test
