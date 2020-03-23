@@ -24,7 +24,3 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test
       run: mvn -B test
-    - name: Codecov
-      run: |
-        export CODECOV_TOKEN="d785b169-8152-47dc-b2a7-95114cbee4c5"
-        bash <(curl -s https://codecov.io/bash)
